@@ -1,0 +1,29 @@
+{
+  "name": "webpack-media-split",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "css-loader": "^5.0.1",
+    "link-media-html-webpack-plugin": "^2.0.0",
+    "media-query-plugin": "^1.4.0",
+    "postcss": "^8.2.4",
+    "postcss-extract-media-query": "^2.0.0",
+    "postcss-loader": "^4.2.0",
+    "style-loader": "^2.0.0"
+  }
+}

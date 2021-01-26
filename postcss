@@ -1,0 +1,16 @@
+const path = require( "path" );
+
+module.exports = {
+    plugins: {
+        'postcss-extract-media-query': {
+            output: {
+                path: path.join(__dirname, 'public', 'styles'),
+                name: '[name]-[query].[ext]' // pattern of emited files i.e. styles-desktop.css
+            },
+            queries: {
+                'screen and (min-width: 767px)': 'tablets-and-above',
+                'screen and (min-width: 959px)': 'desktop',
+            }
+        }
+    }
+}
