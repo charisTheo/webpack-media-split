@@ -7,10 +7,9 @@
     <title>Webpack media split demo</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-    <!-- <link rel="stylesheet" href="/styles-desktop.css" media="screen and (min-width: 959px)"> -->
-    <!-- <link rel="stylesheet" href="/styles-tablets-and-above.css" media="screen and (min-width: 767px)"> -->
+    <!-- <link rel="stylesheet" href="./styles-desktop.css" media="screen and (min-width: 959px)"> -->
+    <!-- <link rel="stylesheet" href="./styles-tablets-and-above.css" media="screen and (min-width: 767px)"> -->
 
     <script>
         let importedTabletsCSS = false;
@@ -19,7 +18,7 @@
         const resizeHandler = () => {
             if (window.innerWidth >= 767 && !importedTabletsCSS) {
                 var tabletsAndAboveCSS = document.createElement('link');
-                tabletsAndAboveCSS.href = '/styles-tablets-and-above.css';
+                tabletsAndAboveCSS.href = './styles-tablets-and-above.css';
                 tabletsAndAboveCSS.rel = 'stylesheet';
                 tabletsAndAboveCSS.type = 'text/css';
                 document.getElementsByTagName('head')[0].appendChild(tabletsAndAboveCSS);
@@ -27,7 +26,7 @@
             }
             if (window.innerWidth >= 959 && !importedDesktopCSS) {
                 var desktopCSS = document.createElement('link');
-                desktopCSS.href = '/styles-desktop.css';
+                desktopCSS.href = './styles-desktop.css';
                 desktopCSS.rel = 'stylesheet';
                 desktopCSS.type = 'text/css';
                 document.getElementsByTagName('head')[0].appendChild(desktopCSS);
