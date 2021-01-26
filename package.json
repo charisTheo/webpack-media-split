@@ -2,13 +2,18 @@
   "name": "webpack-media-split",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "docs/index.html",
   "scripts": {
     "start": "webpack serve --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "webpack",
+    "CSS",
+    "media queries",
+    "postcss"
+  ],
+  "author": "charisTheo",
   "license": "ISC",
   "dependencies": {
     "html-webpack-plugin": "^4.5.1",
@@ -19,7 +24,6 @@
   "devDependencies": {
     "autoprefixer": "^10.2.3",
     "css-loader": "^5.0.1",
-    "link-media-html-webpack-plugin": "^2.0.0",
     "media-query-plugin": "^1.4.0",
     "postcss": "^8.2.4",
     "postcss-extract-media-query": "^2.0.0",
