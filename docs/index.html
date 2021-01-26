@@ -1,10 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Webpack media split demo</title><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><script>let importedTabletsCSS = false;
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Webpack media split demo</title><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"><script>let importedTabletsCSS = false;
         let importedDesktopCSS = false;
 
         const resizeHandler = () => {
             if (window.innerWidth >= 767 && !importedTabletsCSS) {
                 var tabletsAndAboveCSS = document.createElement('link');
-                tabletsAndAboveCSS.href = '/styles-tablets-and-above.css';
+                tabletsAndAboveCSS.href = './styles-tablets-and-above.css';
                 tabletsAndAboveCSS.rel = 'stylesheet';
                 tabletsAndAboveCSS.type = 'text/css';
                 document.getElementsByTagName('head')[0].appendChild(tabletsAndAboveCSS);
@@ -12,7 +12,7 @@
             }
             if (window.innerWidth >= 959 && !importedDesktopCSS) {
                 var desktopCSS = document.createElement('link');
-                desktopCSS.href = '/styles-desktop.css';
+                desktopCSS.href = './styles-desktop.css';
                 desktopCSS.rel = 'stylesheet';
                 desktopCSS.type = 'text/css';
                 document.getElementsByTagName('head')[0].appendChild(desktopCSS);
@@ -24,4 +24,4 @@
         };
 
         window.addEventListener('resize', resizeHandler);
-        resizeHandler();</script></head><body><header><nav><ul><li><a href="#section1">Section 1</a></li><li><a href="#section2">Section 2</a></li><li><a href="#section3">Section 3</a></li></ul></nav></header><main><section id="section1"></section><section id="section2"></section><section id="section3"></section></main><footer></footer><script src="/main.js"></script></body></html>
+        resizeHandler();</script></head><body><header><nav><ul><li><a href="#section1">Section 1</a></li><li><a href="#section2">Section 2</a></li><li><a href="#section3">Section 3</a></li></ul></nav></header><main><section id="section1"></section><section id="section2"></section><section id="section3"></section></main><footer></footer><script src="./main.js"></script></body></html>
